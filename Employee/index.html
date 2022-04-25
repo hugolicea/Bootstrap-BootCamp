@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- Navbar/header-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+                    class="d-inline-block align-text-top">
+            </a>
+            <nav class="navbar navbar-light bg-dark">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Cashier Manager</span>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <section class="bg-light p-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 col-lg-2 d-grid">
+                    <label class=""></label>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 d-grid">
+                    <label class=""></label>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 d-grid">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#cashierModal">
+                        Add New Cashier
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cashiers Table -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-bordered">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Employee Id</th>
+                                    <th scope="col">Store Id</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Cashier Id</th>
+                                    <th scope="col">Position</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>123451</td>
+                                    <td>42</td>
+                                    <td>Juan Perez</td>
+                                    <td>9999</td>
+                                    <td>CASHIER</td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#cashierModal">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-danger text-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>123452</td>
+                                    <td>42</td>
+                                    <td>Jesus Hernandez</td>
+                                    <td>9999</td>
+                                    <td>CASHIER</td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#cashierModal">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-danger text-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>123453</td>
+                                    <td>42</td>
+                                    <td>Pepe Martinez</td>
+                                    <td>9999</td>
+                                    <td>CASHIER</td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#cashierModal">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-danger text-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>123454</td>
+                                    <td>42</td>
+                                    <td>Leonora Vargas</td>
+                                    <td>9999</td>
+                                    <td>CASHIER</td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#cashierModal">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-danger text-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>123455</td>
+                                    <td>42</td>
+                                    <td>Elsa Viondo</td>
+                                    <td>9999</td>
+                                    <td>CASHIER</td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#cashierModal">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-danger text-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>123456</td>
+                                    <td>42</td>
+                                    <td>Emma Martinez</td>
+                                    <td>9999</td>
+                                    <td>CASHIER</td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#cashierModal">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-danger text-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>123457</td>
+                                    <td>42</td>
+                                    <td>Eduardo Aranza</td>
+                                    <td>9999</td>
+                                    <td>CASHIER</td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#cashierModal">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-danger text-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>123458</td>
+                                    <td>42</td>
+                                    <td>Roberto Juarez</td>
+                                    <td>9999</td>
+                                    <td>CASHIER</td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#cashierModal">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-danger text-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>123459</td>
+                                    <td>42</td>
+                                    <td>Leonel Estrada</td>
+                                    <td>9999</td>
+                                    <td>CASHIER</td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#cashierModal">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-danger text-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Pagination-->
+        <div class="container">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="p-1 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 www.myconpany.com</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-1">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Cashier Modal -->
+    <div class="modal fade" id="cashierModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="cashierModaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cashierModLabel">New Cashier</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="md-1">
+                        <label for="empid" class="col-form-label">Employee Id</label>
+                        <input type="text" class="form-control" id="empid">
+                    </div>
+                    <div class="md-1">
+                        <label for="storeid" class="col-form-label">Store Id</label>
+                        <input type="text" class="form-control" id="storeid">
+                    </div>
+                    <div class="md-1">
+                        <label for="name" class="col-form-label">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="md-1">
+                        <label for="cashierid" class="col-form-label">Cashier Id</label>
+                        <input type="text" class="form-control" id="cashierid">
+                    </div>
+                    <div class="md-1">
+                        <label for="position" class="col-form-label">Position</label>
+                        <input type="text" class="form-control" id="position">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
