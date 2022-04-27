@@ -23,7 +23,7 @@
             </a>
             <nav class="navbar navbar-light bg-dark">
                 <div class="container-fluid">
-                    <span class="navbar-brand mb-0 h1">Cashier Manager</span>
+                    <span class="navbar-brand mb-0 h1">Employee Manager</span>
                 </div>
             </nav>
         </div>
@@ -31,36 +31,31 @@
 
     <section class="bg-light p-2">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col-md-3 col-lg-2 d-grid">
-                    <label class=""></label>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2 d-grid">
-                    <label class=""></label>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2 d-grid">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#cashierModal">
-                        Add New Cashier
+            <div class="row justify-content-end">
+                <div class="col-sm-4 col-md-4 col-lg-4 d-grid">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                        data-bs-target="#employeeModal">
+                        Add New employee
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Cashiers Table -->
+    <!-- employee Table -->
     <section class="bg-light">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="">
                     <div class="table-responsive">
                         <table class="table table-striped table-hover table-bordered">
                             <thead class="table-primary">
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Employee Id</th>
-                                    <th scope="col">Store Id</th>
+                                    <th scope="col">Department Id</th>
                                     <th scope="col">Name</th>
-                                    <th scope="col">Cashier Id</th>
+                                    <th scope="col">Rel Id</th>
                                     <th scope="col">Position</th>
                                     <th scope="col">Actions</th>
                                 </tr>
@@ -72,10 +67,10 @@
                                     <td>42</td>
                                     <td>Juan Perez</td>
                                     <td>9999</td>
-                                    <td>CASHIER</td>
+                                    <td>EMPLOYEE</td>
                                     <td>
                                         <button class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#cashierModal">
+                                            data-bs-target="#employeeModal">
                                             <i class="bi bi-pencil"></i>
                                         </button>
                                         <button class="btn btn-danger text-center">
@@ -89,10 +84,10 @@
                                     <td>42</td>
                                     <td>Jesus Hernandez</td>
                                     <td>9999</td>
-                                    <td>CASHIER</td>
+                                    <td>EMPLOYEE</td>
                                     <td>
                                         <button class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#cashierModal">
+                                            data-bs-target="#employeeModal">
                                             <i class="bi bi-pencil"></i>
                                         </button>
                                         <button class="btn btn-danger text-center">
@@ -106,10 +101,10 @@
                                     <td>42</td>
                                     <td>Pepe Martinez</td>
                                     <td>9999</td>
-                                    <td>CASHIER</td>
+                                    <td>EMPLOYEE</td>
                                     <td>
                                         <button class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#cashierModal">
+                                            data-bs-target="#employeeModal">
                                             <i class="bi bi-pencil"></i>
                                         </button>
                                         <button class="btn btn-danger text-center">
@@ -123,10 +118,10 @@
                                     <td>42</td>
                                     <td>Leonora Vargas</td>
                                     <td>9999</td>
-                                    <td>CASHIER</td>
+                                    <td>EMPLOYEE</td>
                                     <td>
                                         <button class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#cashierModal">
+                                            data-bs-target="#employeeModal">
                                             <i class="bi bi-pencil"></i>
                                         </button>
                                         <button class="btn btn-danger text-center">
@@ -140,10 +135,10 @@
                                     <td>42</td>
                                     <td>Elsa Viondo</td>
                                     <td>9999</td>
-                                    <td>CASHIER</td>
+                                    <td>EMPLOYEE</td>
                                     <td>
                                         <button class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#cashierModal">
+                                            data-bs-target="#employeeModal">
                                             <i class="bi bi-pencil"></i>
                                         </button>
                                         <button class="btn btn-danger text-center">
@@ -157,10 +152,10 @@
                                     <td>42</td>
                                     <td>Emma Martinez</td>
                                     <td>9999</td>
-                                    <td>CASHIER</td>
+                                    <td>EMPLOYEE</td>
                                     <td>
                                         <button class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#cashierModal">
+                                            data-bs-target="#employeeModal">
                                             <i class="bi bi-pencil"></i>
                                         </button>
                                         <button class="btn btn-danger text-center">
@@ -174,10 +169,10 @@
                                     <td>42</td>
                                     <td>Eduardo Aranza</td>
                                     <td>9999</td>
-                                    <td>CASHIER</td>
+                                    <td>EMPLOYEE</td>
                                     <td>
                                         <button class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#cashierModal">
+                                            data-bs-target="#employeeModal">
                                             <i class="bi bi-pencil"></i>
                                         </button>
                                         <button class="btn btn-danger text-center">
@@ -191,10 +186,10 @@
                                     <td>42</td>
                                     <td>Roberto Juarez</td>
                                     <td>9999</td>
-                                    <td>CASHIER</td>
+                                    <td>EMPLOYEE</td>
                                     <td>
                                         <button class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#cashierModal">
+                                            data-bs-target="#employeeModal">
                                             <i class="bi bi-pencil"></i>
                                         </button>
                                         <button class="btn btn-danger text-center">
@@ -208,10 +203,10 @@
                                     <td>42</td>
                                     <td>Leonel Estrada</td>
                                     <td>9999</td>
-                                    <td>CASHIER</td>
+                                    <td>EMPLOYEE</td>
                                     <td>
                                         <button class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#cashierModal">
+                                            data-bs-target="#employeeModal">
                                             <i class="bi bi-pencil"></i>
                                         </button>
                                         <button class="btn btn-danger text-center">
@@ -253,13 +248,13 @@
         </div>
     </footer>
 
-    <!-- Cashier Modal -->
-    <div class="modal fade" id="cashierModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="cashierModaLabel" aria-hidden="true">
+    <!-- employee Modal -->
+    <div class="modal fade" id="employeeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="employeeModaLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="cashierModLabel">New Cashier</h5>
+                    <h5 class="modal-title" id="employeeModLabel">New employee</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -268,16 +263,16 @@
                         <input type="text" class="form-control" id="empid">
                     </div>
                     <div class="md-1">
-                        <label for="storeid" class="col-form-label">Store Id</label>
-                        <input type="text" class="form-control" id="storeid">
+                        <label for="Departmentid" class="col-form-label">Department Id</label>
+                        <input type="text" class="form-control" id="Departmentid">
                     </div>
                     <div class="md-1">
                         <label for="name" class="col-form-label">Name</label>
                         <input type="text" class="form-control" id="name">
                     </div>
                     <div class="md-1">
-                        <label for="cashierid" class="col-form-label">Cashier Id</label>
-                        <input type="text" class="form-control" id="cashierid">
+                        <label for="employeeid" class="col-form-label">employee Id</label>
+                        <input type="text" class="form-control" id="employeeid">
                     </div>
                     <div class="md-1">
                         <label for="position" class="col-form-label">Position</label>
